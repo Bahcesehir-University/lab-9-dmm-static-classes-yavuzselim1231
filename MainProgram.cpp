@@ -224,7 +224,7 @@ bool IntArray::isEmpty() const {
 bool IntArray::removeLast() {
     // TODO 15: If not empty, decrement count and return true.
     //          Otherwise return false.
-    if(capacity != 0){
+    if( count != 0){
         count--;
         return true;
     }
