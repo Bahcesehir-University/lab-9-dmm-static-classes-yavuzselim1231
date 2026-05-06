@@ -130,9 +130,10 @@ IntArray::IntArray(int cap) {
     // TODO 6: Allocate dynamic array of size cap using 'new'
     //         Initialize capacity, count
     //         Notify Tracker that an object was created
-    data =new int[cap];
+    
     capacity = cap;
     count = 0;
+    data =new int[cap];
     Tracker::objectCreated();
 }
 
@@ -184,7 +185,7 @@ bool IntArray::add(int value) {
     //          increment count, return true.
     //          Otherwise return false.
     if(count < capacity){
-        data[count] = value + data[count];
+        data[count] = value;
         count++;
         return true;
     }
